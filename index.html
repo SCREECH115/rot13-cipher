@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher</title>
+    <script type="module" src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Caesar Cipher</div>
+      <div class="app-container">
+        <input
+          id="input"
+          class="input"
+          type="text"
+          placeholder="Enter value..."
+          required
+          onkeydown="if(event.keyCode === 32) return false"
+        />
+        <button class="btn" id="btnGenerate">Generate!</button>
+        <p id="warning" class="warning">Wprowadź wartość!</p>
+        <hr />
+        <input
+          id="output"
+          class="output"
+          type="text"
+          placeholder="Cipher..."
+          disabled
+        />
+      </div>
+    </div>
+  </body>
+</html>
