@@ -9,8 +9,42 @@
 body {
   color: white;
   font-family: "Roboto", sans-serif;
-  background-color: #fad961;
-  background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  background-color: #303030;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  user-select: none;
+}
+
+.sub-title {
+  padding: 40px 70px;
+  margin: 30px 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: rgb(30, 30, 30);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .container {
@@ -18,16 +52,7 @@ body {
   padding: 50px 50px;
   width: 500px;
   margin: 0 auto;
-  margin-top: 20vh;
-}
-
-.title {
-  background-color: rgba(30, 30, 30, 0.9);
-  padding: 30px 20px;
-  border-radius: 10px;
-  font-size: 56px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-top: 10vh;
 }
 
 .app-container {
@@ -78,6 +103,12 @@ body {
 }
 
 .output {
+  height: 0px;
+  padding: 0px;
+  transition: 0.15s ease-in-out all;
+}
+
+.output {
   cursor: pointer;
   user-select: none;
 }
@@ -85,4 +116,49 @@ body {
 hr {
   border-radius: 100%;
   opacity: 0.5;
+}
+
+.buttons {
+  display: flex;
+  height: 30px;
+  gap: 10px;
+}
+
+.copy-btn,
+.reset-btn {
+  width: 99%;
+  background-color: rgb(30, 30, 30);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.15s ease-in-out all;
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+.copy-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+footer {
+  margin: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

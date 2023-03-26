@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="titles">
+      <!-- <div class="sub-title">ROT13</div> -->
+    </div>
     <div class="container">
-      <div class="title">Caesar Cipher</div>
+      <div class="title">CAESAR-CIPHER</div>
       <div class="app-container">
         <input
           id="input"
@@ -20,17 +23,19 @@
           required
           onkeydown="if(event.keyCode === 32) return false"
         />
-        <button class="btn" id="btnGenerate">Generate!</button>
-        <p id="warning" class="warning">Wprowadź wartość!</p>
+        <button class="btn" id="btnGenerate">Generate ROT-13</button>
+        <p id="warning" class="warning">Please enter a value!</p>
         <hr />
-        <input
-          id="output"
-          class="output"
-          type="text"
-          placeholder="Cipher..."
-          disabled
-        />
+        <input id="output" class="output" type="text" disabled />
+        <div class="buttons">
+          <button class="copy-btn">Copy</button>
+          <button class="reset-btn">Reset</button>
+        </div>
       </div>
     </div>
+
+    <footer>
+      &copy; 2023 by <a href="https://github.com/SCREECH115">SCREECH115</a>
+    </footer>
   </body>
 </html>

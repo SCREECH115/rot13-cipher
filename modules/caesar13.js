@@ -15,9 +15,13 @@ const caesar13 = () => {
   let result = [];
 
   if (input.value === "") {
+    output.style.padding = "0px";
+    output.style.height = "0px";
     warning.style.opacity = 1;
   } else {
     warning.style.opacity = 0;
+    output.style.padding = "20px";
+    output.style.height = "60px";
     for (let i = 0; i < arr.length; i++) {
       if (/^[a-zA-Z]$/.test(arr[i])) {
         let isUpperCase = arr[i] === arr[i].toUpperCase();
