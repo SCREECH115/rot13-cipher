@@ -1,4 +1,3 @@
-const btn = document.getElementById("btnGenerate");
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 const warning = document.getElementById("warning");
