@@ -23,7 +23,35 @@
           required
           onkeydown="if(event.keyCode === 32) return false"
         />
-        <button class="btn" id="btnGenerate">Generate ROT-13</button>
+        <!-- <button class="btn" >Generate ROT-13</button> -->
+
+        <button id="btnGenerate">
+          <div class="text">
+            <span>Generate</span>
+            <span>ROT-13</span>
+            <span>Code</span>
+          </div>
+          <div class="clone">
+            <span>Letters</span>
+            <span>will</span>
+            <span>shift</span>
+          </div>
+          <svg
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            ></path>
+          </svg>
+        </button>
         <p id="warning" class="warning">Please enter a value!</p>
         <hr />
         <input id="output" class="output" type="text" disabled />
