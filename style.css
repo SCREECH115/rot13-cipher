@@ -110,7 +110,7 @@ body {
 }
 
 .output {
-  cursor: pointer;
+  cursor: text;
   user-select: none;
 }
 
